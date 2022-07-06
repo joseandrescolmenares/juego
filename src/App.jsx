@@ -1,27 +1,63 @@
-import { useState } from "react";
 import preguntas from "./Preguntas.js";
-import {useState, useEffect} from "react"
+import { useState, useEffect } from "react";
 
 function App() {
+  const [preguntasActual, setPreguntasActual] = useState(0);
+  const [puntuacion, setPuntuacion] = useState(0);
+  const [final, setFinal] = useState(false);
 
-  const [preguntas, setPreguntas] = useState(0)
-  const [puntuacion, setPuntuacion] = useState(0)
-  const [final, setFinal] = useState(false)
+   function handle(isCorrect, e){
+    if (isCorrect) setPuntuacion(puntuacion + 1);
 
+    e.target.classList.add(isCorrect ? "correct" : "incorrect");
+   
+   setTimeout(() =>{
+    e.target.classList.remove(isCorrect ? "correct" : "incorrect");
+   },1000)
+
+
+
+  if (preguntasActual === preguntas.length - 1) {
+    setFinal(true);
+  } else {
+    setTimeout(()=>{
+      setPreguntasActual(preguntasActual + 1);
+  
+    },1000)
+    
+  }
+
+
+  
+  };
+
+  if (final)
+    return (
+      <main className='app'>
+        <div className='juego-terminado'>
+          <span>
+            juego terminado obtuviste {puntuacion} de {preguntas.length}
+          </span>
+        </div>
+      </main>
+    );
 
   return (
     <main className="app">
       <div className="lado-izquierdo">
         <div className="numero-Pregunta">
-          <span>Pregunta {preguntas}</span> de 5
+          <span>Pregunta {preguntasActual + 1}</span> /{preguntas.length}
         </div>
-        <div className="titulo-pregunta">Como te llamas?</div>
+        <div className="titulo-pregunta">
+          {preguntas[preguntasActual].titulo}
+        </div>
       </div>
       <div className="lado-derecho">
-        <button>opcion 1</button>
-        <button>opcion 2</button>
-        <button>opcion 3</button>
-        <button>opcion 4</button>
+        {preguntas[preguntasActual].opciones.map((r) => (
+          <button  onClick={(e) => handle(r.isCorrect, e)}>
+            {r.textoRespuesta}
+          </button>
+        ))}
       </div>
     </main>
   );
