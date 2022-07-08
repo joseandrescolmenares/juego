@@ -10,7 +10,7 @@ let preguntas = [
         ]
     },
     {
-        titulo: "hola",
+        titulo: "que es React",
         opciones: [
             {textoRespuesta: "eres", isCorrect: false},
             {textoRespuesta: "eres", isCorrect: false},
