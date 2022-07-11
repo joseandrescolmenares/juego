@@ -1,8 +1,7 @@
 import preguntas from "../Preguntas";
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom'
-
-function Juego() {
+function JuegoDificil() {
   const [preguntasActual, setPreguntasActual] = useState(0);
   const [puntuacion, setPuntuacion] = useState(0);
   const [final, setFinal] = useState(false);
@@ -64,7 +63,7 @@ function Juego() {
           <span>
             juego terminado obtuviste {puntuacion} de {preguntas.length}
           </span>
-          <button onClick={handleVolve}>Volver a jugar </button>
+          <button onClick={handleVolve}>Volver a jugar</button>
           <button
             onClick={() => {
               setFinal(false), setRespuestas(true), setPreguntasActual(0);
@@ -76,8 +75,7 @@ function Juego() {
       </main>
     );
 
-
-    if (respuesta)
+  if (respuesta)
     return (
       <main className="app">
         <div className="lado-izquierdo">
@@ -93,8 +91,6 @@ function Juego() {
       </main>
     );
 
-
-
   return (
     <main className="app">
       <div className="lado-izquierdo">
@@ -108,12 +104,10 @@ function Juego() {
           <span className="toempo-restante">Tiempo Restan: {tiempo}</span>
         ) : (
           <button
-          
             onClick={() => {
               setDisibles(false);
               setTiempo(10);
               setPreguntasActual(preguntasActual + 1);
-              if (preguntasActual === preguntas.length - 1) {setFinal(true)}
             }}
           >
             {preguntasActual === preguntas.length -1? "Volver a jugar" : "Siguiente"}
@@ -126,11 +120,10 @@ function Juego() {
             {r.textoRespuesta}
           </button>
         ))}
-        
       </div>
       <Link to='/'><button className='volver'>Volver al menu</button></Link>
     </main>
   );
 }
 
-export default Juego;
+export default JuegoDificil;

@@ -13,19 +13,23 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #fff;
+    
   }
   
   .app {
-    background-color: #252d4a;
+    background-color: #313e75;
     max-width: 650px;
-    min-width: 450px;
+    min-width: 650px;
     height: min-content;
-    min-height: 200px;
+    min-height: 330px;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 42px 0px rgba(248, 13, 13, 0.75);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    
+   
   }
   
   /* PREGUNTAS */
@@ -60,23 +64,28 @@
   .juego-terminado {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:center;
     font-size: 24px;
     align-items: center;
+  
   }
   
   /* GRAL */
   button {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    width: 200px;
     font-size: 16px;
-    color: #ffffff;
-    background-color: #252d4a;
+    color: #050505;
+    background-color: #ffffff;
     border-radius: 15px;
     display: flex;
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid #234668;
+    border: 5px solid #102e4d;
     cursor: pointer;
   }
   
@@ -102,7 +111,7 @@
   }
   
   button:hover {
-    background-color: #234668;
+    background-color: #2e6aa7;
   }
   
   button[disabled] {
@@ -117,4 +126,20 @@
   
   button svg {
     margin-right: 5px;
+  }
+
+  .izquierdo{
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;    
+  }
+
+  .pregunta{
+    margin-top:30px;
+  }
+
+  .volver{
+    height:60px;
+    width: 120px;
+    text-decoration: none;
   }
