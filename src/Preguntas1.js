@@ -1,42 +1,42 @@
 let preguntas = [
     {
-        titulo: "¿Que es ",
+        titulo: "¿El método setState() es asíncrono?",
         opciones: [
-            {textoRespuesta: "opciones", isCorrect: true},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false}
+            {textoRespuesta: "si", isCorrect: true},
+            {textoRespuesta: "No", isCorrect: false},
+            {textoRespuesta: "nose", isCorrect: false},
+            {textoRespuesta: "puede ser", isCorrect: false},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     },
     {
-        titulo: "que es React",
+        titulo: "¿Qué es el DOM virtual?",
         opciones: [
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "ere", isCorrect: true},
-            {textoRespuesta: "eres", isCorrect: false}
+            {textoRespuesta: "es un patrón de React basado en abstraer el DOM del navegador", isCorrect: true},
+            {textoRespuesta: "es un API", isCorrect: false},
+            {textoRespuesta: "es una funcion", isCorrect: false},
+            {textoRespuesta: "es una  componente de React", isCorrect: false},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     },
     {
-        titulo: "como estas?",
+        titulo: "¿Qué función cumplen las keys en React?",
         opciones: [
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: true}
+            {textoRespuesta: "El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario).", isCorrect: true},
+            {textoRespuesta: "Sirven para identificar elementos", isCorrect: false},
+            {textoRespuesta: "son conponentes unicos", isCorrect: false},
+            {textoRespuesta: "son hook", isCorrect: false},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     },
     {
-        titulo: "titulos",
+        titulo: "¿Qué es el componente de orden superior?",
         opciones: [
-            {textoRespuesta: "opciones", isCorrect: true},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false}
+            {textoRespuesta: "Es una técnica avanzada en React para reutilizar la lógica de los componentes.", isCorrect: true},
+            {textoRespuesta: "es una funcion", isCorrect: false},
+            {textoRespuesta: "es una tecnica para hacer mas rapida la app", isCorrect: false},
+            {textoRespuesta: "es una conponente que es reutilizado", isCorrect: false},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     }
 ];

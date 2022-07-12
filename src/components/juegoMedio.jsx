@@ -1,4 +1,4 @@
-import preguntas from "../Preguntas1";
+import preguntas from "../Preguntas2";
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom'
 

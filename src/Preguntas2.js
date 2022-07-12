@@ -1,42 +1,42 @@
 let preguntas = [
     {
-        titulo: "titulos",
+        titulo: "¿Que es un estado en React?",
         opciones: [
-            {textoRespuesta: "opciones", isCorrect: true},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false}
+            {textoRespuesta: "Lugar donde el componente almacena datos de manera local .", isCorrect: true},
+            {textoRespuesta: "ciclo de vida", isCorrect: false},
+            {textoRespuesta: "una funcion", isCorrect: false},
+            {textoRespuesta: "un avariable", isCorrect: false},
+            {textoRespuesta: "Otro", isCorrect: false}
         ]
     },
     {
-        titulo: "que es React",
+        titulo: "¿Que son las prop en React?",
         opciones: [
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "ere", isCorrect: true},
-            {textoRespuesta: "eres", isCorrect: false}
+            {textoRespuesta: "funciones", isCorrect: false},
+            {textoRespuesta: "son componentes que te permiten renderizar mas rapido", isCorrect: false},
+            {textoRespuesta: "son variables", isCorrect: false},
+            {textoRespuesta: "información que viaja de un componente padre a un hijo para ser utilizada." ,isCorrect: true},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     },
     {
-        titulo: "como estas?",
+        titulo: "¿Que son los hook?",
         opciones: [
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: true}
+            {textoRespuesta: "funciones que te permiten actualizar el estado ", isCorrect: false},
+            {textoRespuesta: "son ciclos de vida", isCorrect: false},
+            {textoRespuesta: "son funciones que te ayudan a almacenar datos", isCorrect: false},
+            {textoRespuesta: "es una nueva implementacion de react", isCorrect: false},
+            {textoRespuesta: "son funciones que te permiten “enganchar” el estado de React y el ciclo de vida desde componentes de función", isCorrect: true}
         ]
     },
     {
-        titulo: "titulos",
+        titulo: "¿Que es Redux?",
         opciones: [
-            {textoRespuesta: "opciones", isCorrect: true},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false}
+            {textoRespuesta: "un manejador de estados globales", isCorrect: true},
+            {textoRespuesta: "un componente", isCorrect: false},
+            {textoRespuesta: "una funcion", isCorrect: false},
+            {textoRespuesta: "una medologia agil", isCorrect: false},
+            {textoRespuesta: "Otro", isCorrect: false}
         ]
     }
 ];
