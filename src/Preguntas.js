@@ -1,42 +1,42 @@
 let preguntas = [
     {
-        titulo: "titulos",
+        titulo: "¿Que es React ?",
         opciones: [
-            {textoRespuesta: "opciones", isCorrect: true},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false}
+            {textoRespuesta: "Biblioteca", isCorrect: true},
+            {textoRespuesta: "Variable", isCorrect: false},
+            {textoRespuesta: "una Funcion", isCorrect: false},
+            {textoRespuesta: "Lenguaje", isCorrect: false},
+            {textoRespuesta: "otros", isCorrect: false}
         ]
     },
     {
-        titulo: "que es React",
+        titulo: "¿ Que son la  Closures",
         opciones: [
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "eres", isCorrect: false},
-            {textoRespuesta: "ere", isCorrect: true},
-            {textoRespuesta: "eres", isCorrect: false}
+            {textoRespuesta: "una Funcion que se llama asi misma", isCorrect: false},
+            {textoRespuesta: "una promesa", isCorrect: false},
+            {textoRespuesta: "una Variable", isCorrect: false},
+            {textoRespuesta: "una Funcion que retorna otra funcion", isCorrect: true},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     },
     {
-        titulo: "como estas?",
+        titulo: "¿Que es iife?",
         opciones: [
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: false},
-            {textoRespuesta: "ongo", isCorrect: true}
+            {textoRespuesta: "una funcion recursiva", isCorrect: false},
+            {textoRespuesta: "una Funcion pasada por parametro", isCorrect: false},
+            {textoRespuesta: "Promesa", isCorrect: false},
+            {textoRespuesta: "una Funcion autoejecutada", isCorrect: true},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     },
     {
-        titulo: "titulos",
+        titulo: "¿Que es un callback",
         opciones: [
-            {textoRespuesta: "opciones", isCorrect: true},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false},
-            {textoRespuesta: "opciones", isCorrect: false}
+            {textoRespuesta: "una Funcion que se pasa por argumento a otra", isCorrect: true},
+            {textoRespuesta: "una Promesa", isCorrect: false},
+            {textoRespuesta: "una funcion recursiva", isCorrect: false},
+            {textoRespuesta: "una forma de escribir codigo", isCorrect: false},
+            {textoRespuesta: "Otros", isCorrect: false}
         ]
     }
 ];

@@ -1,4 +1,4 @@
-import preguntas from "../Preguntas";
+import preguntas from "../Preguntas1";
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom'
 
@@ -12,13 +12,7 @@ function JuegoMedio() {
 
   function handle(isCorrect, e) {
     if (isCorrect) setPuntuacion(puntuacion + 1);
-    setTimeout(() => {
-      if (isCorrect) {
-        alert("hola");
-      } else {
-        alert("perdiste");
-      }
-    }, 700);
+    
 
     setTimeout(() => {
       e.target.classList.remove(isCorrect ? "correct" : "incorrect");

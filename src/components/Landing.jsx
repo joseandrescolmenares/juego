@@ -1,10 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import s from './css/Landing.module.css'
 import {Link} from 'react-router-dom'
+import ReactHowler  from 'react-howler'
+import audio from './audio/gta-san-andreas.mp3'
+
 const Landing = () => {
+
+const [repro, setRepro] = useState(true)
+
 return ( 
  <>
-    
+    <ReactHowler src={audio} playing={repro}/>
     <div className={s.card}>
         <div className={s.div}>
             <h1 className={s.h1}>Bienvenidos a mi Juego</h1>
