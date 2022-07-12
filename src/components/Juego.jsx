@@ -30,7 +30,7 @@ function Juego() {
   }
   const  handleRespuesta = () => {
     if (preguntasActual === preguntas.length - 1) {
-      window.location.reload("/");
+      
     } else {
       setTimeout(() => {
         setPreguntasActual(preguntasActual + 1);
@@ -47,9 +47,7 @@ function Juego() {
     return () => clearInterval(interval);
   }, [tiempo]);
 
-  const handleVolve = () => {
-    window.location.reload("/");
-  };
+  
 
   if (final)
     return (
@@ -58,7 +56,7 @@ function Juego() {
           <span>
             juego terminado obtuviste {puntuacion} de {preguntas.length}
           </span>
-          <button onClick={handleVolve}>Volver a jugar </button>
+        <Link to="/"> <button>Volver a jugar </button></Link> 
           <button
             onClick={() => {
               setFinal(false), setRespuestas(true), setPreguntasActual(0);
@@ -82,7 +80,7 @@ function Juego() {
           {preguntas[preguntasActual].titulo}
         </div>
        <div>{preguntas[preguntasActual].opciones.filter((r) => r.isCorrect )[0].textoRespuesta}</div>
-       <button onClick={handleRespuesta}>Continuar</button>
+      <Link to='/'><button onClick={handleRespuesta}>Continuar</button></Link>
       </div>
       </main>
     );
