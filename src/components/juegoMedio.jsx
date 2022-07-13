@@ -55,7 +55,7 @@ function JuegoMedio() {
           <span>
             juego terminado obtuviste {puntuacion} de {preguntas.length}
           </span>
-         <Link to='/'><button >Volver a jugar</button></Link> 
+         <Link className='Link' to='/'><button >Volver a jugar</button></Link> 
           <button
             onClick={() => {
               setFinal(false), setRespuestas(true), setPreguntasActual(0);
@@ -78,7 +78,8 @@ function JuegoMedio() {
           {preguntas[preguntasActual].titulo}
         </div>
        <div>{preguntas[preguntasActual].opciones.filter((r) => r.isCorrect )[0].textoRespuesta}</div>
-      <Link to='/'><button onClick={handleRespuesta}>Continuar</button></Link>
+      <button onClick={handleRespuesta}>Continuar</button>
+      <Link className='Link'  to='/'><button>Volver a jugar</button></Link>
       </div>
       </main>
     );
@@ -113,7 +114,7 @@ function JuegoMedio() {
           </button>
         ))}
       </div>
-      <Link to='/'><button className='volver'>Volver al menu</button></Link>
+      <Link className='Link' to='/'><button className='volver'>Volver al menu</button></Link>
     </main>
   );
 }
