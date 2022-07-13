@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +18,7 @@
   
   .app {
     background-color: #313e75;
-    max-width: 650px;
-    min-width: 650px;
+    width: 650px;
     height: min-content;
     min-height: 330px;
     border-radius: 15px;
@@ -147,3 +145,17 @@
 .Link{
    text-decoration: none;
   }
+
+   @media screen  and (max-width: 730px) {
+    .app{
+      width:auto;
+      height:400px;
+      display:block;
+      text-align:center;
+      
+    }
+    button{
+      margin: 10px;
+    }
+   
+   }

@@ -76,3 +76,45 @@
   .h1{
     color: rgb(0, 0, 0);
   }
+
+  .img{
+    background-color: none;
+    height:40px;
+    width:40px;
+    display:flex;
+    justify-content: center;
+    margin: 10px;
+    
+  }
+
+  .musi{
+    width:30px;
+    height:30px;
+    text-decoration: overline;
+
+  }
+
+  @media screen  and (max-width: 450px) {
+    .card {
+      width: 250px;
+      height:420px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img{
+      background-color: none;
+      height:30px;
+      width:30px;
+     position: absolute;
+     bottom: 0;
+     
+      
+    }
+
+    .element{
+      width:150px;
+    }
+  }
+
+  

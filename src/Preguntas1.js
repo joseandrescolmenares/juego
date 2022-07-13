@@ -12,7 +12,7 @@ let preguntas = [
     {
         titulo: "¿Qué es el DOM virtual?",
         opciones: [
-            {textoRespuesta: "es un patrón de React basado en abstraer el DOM del navegador", isCorrect: true},
+            {textoRespuesta: "El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM .", isCorrect: true},
             {textoRespuesta: "es un API", isCorrect: false},
             {textoRespuesta: "es una funcion", isCorrect: false},
             {textoRespuesta: "es una  componente de React", isCorrect: false},
@@ -22,7 +22,7 @@ let preguntas = [
     {
         titulo: "¿Qué función cumplen las keys en React?",
         opciones: [
-            {textoRespuesta: "El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario).", isCorrect: true},
+            {textoRespuesta: "Las keys ayudan a React a identificar que ítems han cambiado", isCorrect: true},
             {textoRespuesta: "Sirven para identificar elementos", isCorrect: false},
             {textoRespuesta: "son conponentes unicos", isCorrect: false},
             {textoRespuesta: "son hook", isCorrect: false},
