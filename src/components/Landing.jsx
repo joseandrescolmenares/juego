@@ -6,12 +6,10 @@ import audio from './audio/gta-san-andreas.mp3'
 
 const Landing = () => {
 
-const [repro, setRepro] = useState(false)
+const [repro, setRepro] = useState(true)
 
 
-useEffect(() => {
-    setRepro(true)
-},[])
+
 
 return ( 
  <>
