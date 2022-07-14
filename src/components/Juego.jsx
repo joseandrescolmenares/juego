@@ -11,7 +11,10 @@ function Juego() {
   const [respuesta, setRespuestas] = useState(false);
 
   function handle(isCorrect, e) {
-    if (isCorrect) setPuntuacion(puntuacion + 1);
+    if (isCorrect){
+      setPuntuacion(puntuacion + 1) 
+      setTiempo(10)
+    } 
    
 
     setTimeout(() => {
